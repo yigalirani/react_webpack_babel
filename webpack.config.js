@@ -1,5 +1,9 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 module.exports = {
+   externals: {
+    react: 'React',
+    'react-dom': 'ReactDOM'
+  },
   module: {
     rules: [
       {
